@@ -1,7 +1,6 @@
 .header {
     display: flex;
     align-items: center;
-    height: 100px;
     width: 100%;
     z-index: 10;
     transition: top 0.2s linear;
@@ -13,6 +12,7 @@
 .logo {
     width: 154px;
     height: 20px;
+    margin: 40px 0;
 }
 
 .header__flex {
@@ -30,44 +30,10 @@
     display: none;
 }
 
-.burger{
-    left: 10px;
-}
-
-.burger,
-.burger::after,
-.burger::before {
-    display: block;
-    background-color: $white;
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-}
-
-.burger::before {
-    content: '';
-    margin-top: 8px;
-}
-
-.burger::after {
-    content: '';
-    margin-top: 16px;
-}
-
-
-
 @media (min-width: 768px) {
-
-    .burger,
-    .burger::after,
-    .burger::before {
-        display: none;
-    }
-
     .menu__list {
         display: flex;
+        padding-top: 40px;
         li a {
             color: $white;
             padding: 10px;

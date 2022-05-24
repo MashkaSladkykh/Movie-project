@@ -1,0 +1,145 @@
+.search {
+    display: none;
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 28px;
+        padding: 1px 15px;
+        border: none;
+        background-color: $pink;
+        border-radius: 30px;
+        color: $white;
+        &:focus-visible {
+            outline: $transparent-gray auto 1px;
+        }
+    }
+    &__text {
+        width: 50%;
+        line-height: 28px;
+        color: $gray;
+        border: none;
+        border-radius: 30px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        &:focus-visible {
+            outline: $transparent-gray auto 1px;
+        }
+    }
+}
+
+.search-icon {
+    background-image: url(../img/search.svg);
+    width: 30px;
+    background-repeat: no-repeat;
+    margin-top: 43px;
+}
+
+.searched{
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: $transparent-black;
+        margin: 20px;
+        border-radius: 33px;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 20px 20px;
+        align-items: center;
+    }
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    &__overview {
+        font-size: 16px;
+        margin: 10px;
+    }
+    &__date {
+        font-size: 20px;
+        color: $pink;
+    }
+    &__title {
+        color: $transparent-gray;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__vote {
+        color: $pink;
+        background-color: $white;
+        border-radius: 50%;
+        font-size: 20px;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding-top: 3px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .search {
+        padding-left: 30px;
+        padding-bottom: 180px;
+        height: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        label input {
+            width: 98%;
+            height: 46px;
+            line-height: 46px;
+            font-size: 1.1em;
+            padding: 10px 20px;
+        }
+        &__btn {
+            height: 46px;
+            padding: 10px 26px;
+            position: absolute;
+            top: 0;
+            right: 7px;
+            cursor: pointer;
+        }
+    }
+    .search-icon {
+        display: none;
+    }
+
+    .searched {
+        &__item {
+            flex-direction: row;
+        }
+        &__desc {
+            justify-content: space-around;
+            margin-left: 75px;
+        }
+        &__img {
+            width: 350px;
+            height: 100%;
+            border-radius: 30px 0 0 30px;
+        }
+        &__overview {
+            max-width: 750px;
+            font-size: 28px;
+        }
+        &__date {
+            font-size: 28px;
+            text-align: end;
+            color: $pink;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__vote {
+            width: 50px;
+            height: 50px;
+            padding-top: 8px;
+
+        }
+    }
+}

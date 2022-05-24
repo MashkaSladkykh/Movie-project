@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     color: $gray;
-    padding-left: 10px;
+    padding-left: 99px;
     padding-top: 10px;
 }
 
@@ -50,9 +50,14 @@ h2 {
 }
 
 form {
-    display: none;
+    text-align: center;
 }
 
+.error {
+    color: $red;
+    font-size: 40px;
+    font-weight: bold;
+}
 
 
 @media (min-width:768px) {
@@ -74,47 +79,6 @@ form {
         font-size: 30px;
     }
 
-.search {
-    padding-left: 30px;
-    padding-bottom: 180px;
-    height: 20px;
-    position: relative;
-    top: 0;
-    left: 0;
 
-    label input {
-        width: 98%;
-        height: 46px;
-        line-height: 46px;
-        font-size: 1.1em;
-        color: rgba(87, 87, 87, 0.5);
-        border: none;
-        border-radius: 30px;
-        padding: 10px 20px;
-        &:focus-visible {
-            outline: rgb(139 139 139 / 43%) auto 1px;
-        }
-    }
-    &__btn {
-        display: inline-flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        height: 46px;
-        padding: 10px 26px;
-        border: none;
-        background-color: pink;
-        border-radius: 30px;
-        position: absolute;
-        top: 0;
-        right: 26px;
-        color: #fff;
-        cursor: pointer;
-        &:focus-visible {
-            outline:rgb(139 139 139 / 43%) auto 1px;
-        }
-    }
-
-}
     
 }

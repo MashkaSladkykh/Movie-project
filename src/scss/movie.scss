@@ -1,4 +1,4 @@
-.popular, .top-rated, .upcoming {
+.popular, .top_rated, .upcoming {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -25,7 +25,7 @@
 
     &__title {
         font-weight: bold;
-        color: black;
+        color: $black;
         font-size: larger;
     }
 
@@ -35,7 +35,7 @@
 }
 
 .circle {
-    background-color: rgba(252, 202, 211, 1);
+    background-color: $pink;
     width: 40px;
     height: 40px;
     position: relative;
@@ -49,7 +49,7 @@
 
 
 @media (min-width:629px) {
-    .popular, .top-rated, .upcoming {
+    .popular, .top_rated, .upcoming {
         flex-wrap: nowrap;
         overflow: scroll;
         overflow-y: hidden;
@@ -57,7 +57,7 @@
         &::-webkit-scrollbar-track {
             border-radius: 10px;
             padding: 2px 0;
-            background-color: #4040401f;
+            background-color: $transparent-black;
           }
           
         &::-webkit-scrollbar {
@@ -68,7 +68,7 @@
         &::-webkit-scrollbar-thumb {
             border-radius: 10px;
             box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
-            background-color: #737272;
+            background-color: $transparent-gray;
             
           }
 
