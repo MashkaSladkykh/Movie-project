@@ -1,13 +1,13 @@
 import {getMovies, getMovieDetails, getMovieCast, getSearchedMovie} from './api';
 
-window.addEventListener('hashchange', () =>{
+window.addEventListener('hashchange', () => {
     const {location : {hash}} = window;
     const [,movieId] = hash.split('='); 
-    getMovieDetails(movieId, '.root');
-    getMovieCast(`${movieId}/credits`, '.root')}
+    chekUrl();
+}
 )
 
-const chekUrl = ()=>{
+const chekUrl = () => {
     const {location : {hash}} = window;
     const [hashName,movieId] = hash.split('='); 
     if(hashName === '#movieId'){
