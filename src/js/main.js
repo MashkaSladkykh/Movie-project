@@ -3,11 +3,11 @@ import {getMovies, getMovieDetails, getMovieCast, getSearchedMovie} from './api'
 window.addEventListener('hashchange', () => {
     const {location : {hash}} = window;
     const [,movieId] = hash.split('='); 
-    chekUrl();
+    checkUrl();
 }
 )
 
-const chekUrl = () => {
+const checkUrl = () => {
     const {location : {hash}} = window;
     const [hashName,movieId] = hash.split('='); 
     if(hashName === '#movieId'){
@@ -22,4 +22,4 @@ const chekUrl = () => {
     }
 }
 
-chekUrl()
+checkUrl()
